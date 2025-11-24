@@ -1,12 +1,11 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "cd One-Step-Paws-Home-main && npm install"
+    "builder": "NIXPACKS"
   },
   "deploy": {
     "startCommand": "cd One-Step-Paws-Home-main && node server.js",
     "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 10
+    "restartPolicyMaxRetries": 5
   }
 }
