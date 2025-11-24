@@ -1,0 +1,1 @@
+web: cd One-Step-Paws-Home-main && node server.js
