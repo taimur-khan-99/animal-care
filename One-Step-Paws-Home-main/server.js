@@ -31,10 +31,10 @@ app.use(session({
 
 app.use("/", router);
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 connectDb().then(() => {
-    app.listen (PORT, () => {
-        console.log(`Server is running at Port: ${PORT}`);
-    })
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+    });
 });
