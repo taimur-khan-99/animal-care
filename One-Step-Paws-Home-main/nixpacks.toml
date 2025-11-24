@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ['nodejs-20']
+
+[phases.build]
+cmds = ['cd One-Step-Paws-Home-main && npm ci --only=production']
+
+[start]
+cmd = 'cd One-Step-Paws-Home-main && node server.js'
